@@ -1,0 +1,19 @@
+@mixin position($type,$top,$left,$right,$bottom){
+    position: $type;
+    top: $top;
+    left: $left;
+    right: $right;
+    bottom: $bottom;
+}
+
+@mixin displayFlex($align,$justify) {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: $align;
+    align-items:$align;
+    -webkit-justify-content: $justify;
+    justify-content:$justify;
+}
